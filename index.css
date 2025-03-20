@@ -1,0 +1,262 @@
+body {
+    font-family: "Comfortaa", serif;
+}
+
+.heading {
+    width: fit-content;
+    margin: 0px auto;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.navbar {
+    background: #F8F5E9;
+}
+
+p {
+    margin: 0px;
+}
+
+#herosection {
+    width: 100%;
+    height: 85vh;
+    background: #F8F5E9;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSectionContent {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myImageCircle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.heroSectionContent p {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.focus-text {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.heroButtons {
+    background: black;
+    color: white;
+    padding: 3px 15px;
+    border: none;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.heroButtons:hover {
+    background: #0177B4;
+    color: white;
+}
+
+#aboutMeSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    gap: 20px;
+}
+
+.aboutP1,
+.aboutP2 {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.aboutP1 img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.aboutP2 {
+    text-align: justify;
+    padding: 10px;
+}
+
+#skillsSection {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsDiv {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding: 10px;
+}
+
+.skillsDiv .p1 {
+    flex: 1;
+    background: #F8F5E9;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.skillsDiv .p2 {
+    flex: 2;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.skillsList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85%;
+    margin: auto;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    gap: 15px;
+}
+
+.project .p1,
+.project .p2 {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.project .p1 img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.gitHubButton,
+.demoButton {
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.gitHubButton {
+    background: black;
+    color: white;
+}
+
+.demoButton {
+    background: #F8F5E9;
+    color: black;
+}
+
+.gitHubButton:hover,
+.demoButton:hover {
+    background: #0177B4;
+    color: white;
+}
+
+#contactSection {
+    border: 1px black solid;
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    background: #F8F5E9;
+}
+
+.contactButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.contactDivOne,
+.contactDivTwo {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contactDivOne {
+    background: #F44336;
+}
+
+.contactDivTwo {
+    background: #0177B4;
+}
+
+.contactDivOne:hover,
+.contactDivTwo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer {
+    background-color: black;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+    #aboutMeSection {
+        flex-direction: column;
+    }
+
+    .skillsDiv {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .contactDivOne,
+    .contactDivTwo {
+        flex: 1 1 100%;
+    }
+}
